@@ -1,0 +1,4 @@
+#Tue Feb 27 19:09:26 PKT 2018
+base.0=D\:\\Projects\\FYP\\BlooDonate-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+file.0=D\:\\Projects\\FYP\\BlooDonate-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

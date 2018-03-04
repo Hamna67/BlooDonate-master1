@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marif.bloodapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.marif.bloodapp.Page.MainActivity" />
+        <activity android:name="com.example.marif.bloodapp.Page.SignIn" />
+        <activity android:name="com.example.marif.bloodapp.Page.SignUp" />
+        <activity android:name="com.example.marif.bloodapp.Page.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.marif.bloodapp.Page.AboutUs" />
+        <activity android:name="com.example.marif.bloodapp.Page.NumberVerify" />
+        <activity android:name="com.example.marif.bloodapp.Page.HomePage" />
+        <activity android:name="com.example.marif.bloodapp.Page.UserBio" />
+        <activity
+            android:name="com.example.marif.bloodapp.Listviews.Listview"
+            android:label="@string/title_activity_listview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.marif.bloodapp.Page.RequestActivity" />
+        <activity android:name="com.example.marif.bloodapp.Page.HistoryActivity" />
+        <activity android:name="com.example.marif.bloodapp.Page.DHistoryActivity" />
+        <activity android:name="com.example.marif.bloodapp.Listviews.ListviewRequest" />
+        <activity android:name="com.example.marif.bloodapp.Listviews.ListviewHistory" />
+        <activity android:name="com.example.marif.bloodapp.Page.WallOfFameActivity" />
+        <activity
+            android:name="com.example.marif.bloodapp.Listviews.cardActivityRequest"
+            android:label="@string/title_activity_card_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.marif.bloodapp.Listviews.cardActivityHistory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.marif.bloodapp.Page.ChangePassword" />
+        <activity android:name="com.example.marif.bloodapp.Page.EditProfile" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

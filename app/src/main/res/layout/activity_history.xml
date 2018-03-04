@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marif.bloodapp.Page.HistoryActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/banner2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/banner_description"
+            app:srcCompat="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/signuptitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="History"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/_20sdp" />
+
+        <Button
+            android:id="@+id/DonorHistory"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/signuptitle2"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="Donationhistory"
+            android:text="Donation History"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/_18sdp" />
+
+        <Button
+            android:id="@+id/RequestHistory"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignBottom="@+id/DonorHistory"
+            android:layout_toEndOf="@+id/DonorHistory"
+            android:layout_toRightOf="@+id/DonorHistory"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="Requesthistory"
+            android:text="Request History"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/_18sdp" />
+
+    </RelativeLayout>
+    <!--
+        <GridView
+            android:id="@+id/requestListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="110dp"
+            android:gravity="center"
+            android:numColumns="2" />
+            -->
+    <!-- android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true"
+     android:divider="@android:color/darker_gray"
+     android:dividerHeight="1dp"
+     android:listSelector="@android:color/background_light"
+     -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
